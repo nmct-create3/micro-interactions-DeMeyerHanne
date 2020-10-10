@@ -29,17 +29,20 @@ const handlePasswordSwitcher = function() {
 }
 
 const getDOMElements = function() {
-    const errorMessage = document.querySelector('.');
-    const input = document.querySelector('.');
-    const field = document.querySelector('.')
-}
+    let email = {},
+        password = {},
+        signInButton ;
 
-let email = {js-email},
-password = {},
-signInButton;
+    // todo
+    email.field = document.querySelector('.js-email-field').querySelector.apply; 
+    password.field = document.querySelector('.js-password-field').querySelector.apply;
+    
+}
 
 document.addEventListener('DOMContentLoaded', function () {
     console.log('Script loaded!');
     handleFloatingLabel();
     handlePasswordSwitcher();
+    handleLoginVallidation();
+    getDOMElements();
 });
